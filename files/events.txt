@@ -1,0 +1,20 @@
+[
+  {
+    "id": "Z6BgWCt",
+    "title": "Concierto",
+    "location": "El planetario",
+    "price": 1220,
+    "capacity": 3,
+    "status": "open",
+    "participants": []
+  },
+  {
+    "id": "QUBajdH",
+    "title": "Murga",
+    "location": "El planetario",
+    "price": 1220,
+    "capacity": 6,
+    "status": "open",
+    "participants": []
+  }
+]
