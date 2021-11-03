@@ -62,4 +62,5 @@ class Manager {
 // en try majeamos  promesa asíncrona para hacer un arreglo pasado a cadena de texto, con un mensaje de éxito
 //  // Y su catch para capturar en caso de existir un error
 
+// data modules
 module.exports = Manager;
