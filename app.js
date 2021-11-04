@@ -2,6 +2,7 @@ const Manager = require("./classes/Manager");
 
 const manager = new Manager();
 
+/*
 manager
   .createEvent({
     title: "Murga",
@@ -12,3 +13,10 @@ manager
   .then((result) => {
     console.log(result.message);
   });
+*/
+
+manager.getById("QUBajdH").then((result) => {
+  console.log(result.event);
+});
+
+manager.registerUser({ name: "Franco", last_name: "Alejandro", age: "18" });

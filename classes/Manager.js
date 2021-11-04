@@ -57,10 +57,32 @@ class Manager {
       }
     }
   }
+  async getById(id) {
+    try {
+      let data = await fs.promises.readFile("./files/events.txt", "utf-8");
+      let events = JSON.parse(data);
+      let event = events.find((evt) => evt.id === id);
+      /// Traemos por id el event específico
+      if (event) {
+        return { status: "succes", event: event };
+      } else {
+        return { status: "error", event: null, message: "cant find event" };
+      }
+    } catch (err) {
+      return {
+        status: "error 404 not found",
+        message: "No se encontró el evento",
+      };
+    }
+  }
+  async registerUser() {}
 }
 
 // en try majeamos  promesa asíncrona para hacer un arreglo pasado a cadena de texto, con un mensaje de éxito
 //  // Y su catch para capturar en caso de existir un error
+
+//console.log(events);
+//
 
 // data modules
 module.exports = Manager;
